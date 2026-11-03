@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guía visual educativa sobre el suelo pélvico, la respiración y movimientos suaves durante el embarazo.">
+  <meta name="theme-color" content="#17465a">
+  <title>Cuidado y conciencia del suelo pélvico | Durante el embarazo</title>
+
+  <style>
+    :root {
+      --ink: #203c43;
+      --muted: #52696c;
+      --teal: #174e59;
+      --teal-dark: #123d48;
+      --sage: #799b83;
+      --sage-light: #edf3eb;
+      --cream: #fbf8f1;
+      --paper: #ffffff;
+      --line: #dce7df;
+      --gold: #d6ad68;
+      --shadow: 0 16px 42px rgba(27, 64, 65, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.68;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .site-header {
+      color: white;
+      background: var(--teal-dark);
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .header-inner {
+      width: min(1120px, calc(100% - 40px));
+      min-height: 94px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .institution-logo {
+      width: 64px;
+      height: 64px;
+      flex: 0 0 64px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5px;
+      border-radius: 50%;
+      color: var(--teal-dark);
+      background: white;
+      text-align: center;
+      font-size: 0.58rem;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .institution-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .institution-name {
+      margin: 0;
+      font-size: 0.96rem;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+    }
+
+    .header-label {
+      margin-left: auto;
+      color: #dce9e3;
+      font-size: 0.88rem;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(52px, 8vw, 96px) 20px;
+      color: white;
+      background: linear-gradient(120deg, rgba(18, 61, 72, 0.97), rgba(35, 95, 98, 0.88));
+    }
+
+    .hero::after {
+      position: absolute;
+      right: -72px;
+      bottom: -160px;
+      width: 390px;
+      height: 390px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 35px rgba(255, 255, 255, 0.035),
+        0 0 0 75px rgba(255, 255, 255, 0.025);
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(1000px, 100%);
+      margin: auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #e2c78f;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 820px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      font-weight: 500;
+      letter-spacing: -0.035em;
+      line-height: 1.06;
+    }
+
+    .hero h2 {
+      margin: 16px 0 8px;
+      color: #e6d4ad;
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      font-weight: 600;
+    }
+
+    .hero-subtitle {
+      max-width: 620px;
+      margin: 0;
+      color: #e2eeea;
+      font-size: 1.08rem;
+    }
+
+    main {
+      width: min(1000px, calc(100% - 40px));
+      margin: auto;
+      padding: 48px 0 76px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 22px;
+      margin-bottom: 56px;
+    }
+
+    .info-panel {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .info-panel.objective {
+      color: white;
+      border: 0;
+      background: var(--sage);
+    }
+
+    .section-kicker {
+      margin: 0 0 7px;
+      color: var(--sage);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .objective .section-kicker {
+      color: #f4e6c6;
+    }
+
+    .info-panel h2,
+    .section-heading h2 {
+      margin: 0 0 12px;
+      color: var(--teal-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.8rem;
+      line-height: 1.2;
+    }
+
+    .objective h2 {
+      color: white;
+    }
+
+    .info-panel p {
+      margin: 0;
+    }
+
+    .info-panel p + p {
+      margin-top: 12px;
+    }
+
+    .functions {
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .functions li {
+      position: relative;
+      margin: 9px 0;
+      padding-left: 25px;
+    }
+
+    .functions li::before {
+      position: absolute;
+      left: 0;
+      color: var(--sage);
+      font-weight: 900;
+      content: "✓";
+    }
+
+    .notice {
+      margin-top: 16px !important;
+      padding: 13px 15px;
+      border-left: 3px solid var(--gold);
+      border-radius: 0 9px 9px 0;
+      background: #faf5e9;
+      color: #4c5148;
+      font-size: 0.94rem;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 0 0 22px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.35rem);
+    }
+
+    .section-heading p {
+      max-width: 360px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .exercise-list {
+      display: grid;
+      gap: 24px;
+    }
+
+    .exercise-card {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.83fr) 1.4fr;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .exercise-image {
+      position: relative;
+      min-height: 320px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: #e7efe8;
+    }
+
+    .exercise-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+    }
+
+    .image-placeholder {
+      display: grid;
+      width: 100%;
+      min-height: 320px;
+      place-items: center;
+      padding: 24px;
+      color: #58736b;
+      text-align: center;
+      background: linear-gradient(145deg, #e5eee6, #d7e5df);
+    }
+
+    .placeholder-inner {
+      display: grid;
+      place-items: center;
+      gap: 10px;
+    }
+
+    .placeholder-number {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #9db5a2;
+      border-radius: 50%;
+      color: var(--teal);
+      background: rgba(255, 255, 255, 0.7);
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+    }
+
+    .placeholder-label {
+      font-size: 0.83rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .exercise-content {
+      padding: 27px clamp(22px, 4vw, 38px) 30px;
+    }
+
+    .exercise-number {
+      margin: 0 0 5px;
+      color: var(--sage);
+      font-size: 0.77rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .exercise-content h3 {
+      margin: 0 0 11px;
+      color: var(--teal-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.45rem, 3vw, 1.85rem);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .purpose {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    .exercise-content h4 {
+      margin: 15px 0 6px;
+      color: var(--teal);
+      font-size: 0.95rem;
+    }
+
+    .exercise-content ol {
+      margin: 0;
+      padding-left: 21px;
+    }
+
+    .exercise-content li {
+      margin: 5px 0;
+      padding-left: 3px;
+    }
+
+    .safety {
+      margin: 17px 0 0;
+      padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      border-radius: 0 9px 9px 0;
+      background: #faf5e9;
+      color: #4d5149;
+      font-size: 0.93rem;
+    }
+
+    .safety strong {
+      color: #66552e;
+    }
+
+    .closing-note {
+      margin-top: 36px;
+      padding: 24px 28px;
+      border: 1px solid #d5e3d7;
+      border-radius: 16px;
+      background: var(--sage-light);
+    }
+
+    .closing-note h2 {
+      margin: 0 0 7px;
+      color: var(--teal-dark);
+      font-family: Georgia, serif;
+      font-size: 1.5rem;
+    }
+
+    .closing-note p {
+      margin: 0;
+    }
+
+    footer {
+      padding: 22px 20px;
+      color: #e5efeb;
+      background: var(--teal-dark);
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Adaptación para celulares y pantallas pequeñas */
+    @media (max-width: 760px) {
+      .header-inner {
+        width: min(100% - 28px, 600px);
+        min-height: 78px;
+        gap: 12px;
+      }
+
+      .institution-logo {
+        width: 54px;
+        height: 54px;
+        flex-basis: 54px;
+      }
+
+      .header-label {
+        display: none;
+      }
+
+      .hero {
+        padding: 54px 22px 60px;
+      }
+
+      main {
+        width: min(100% - 28px, 620px);
+        padding-top: 32px;
+      }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 42px;
+      }
+
+      .info-panel {
+        padding: 23px;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-heading p {
+        margin-top: 8px;
+      }
+
+      .exercise-card {
+        grid-template-columns: 1fr;
+      }
+
+      .exercise-image,
+      .exercise-image img,
+      .image-placeholder {
+        min-height: 250px;
+      }
+
+      .exercise-content {
+        padding: 23px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .institution-name {
+        max-width: 220px;
+        font-size: 0.83rem;
+      }
+
+      .hero {
+        padding: 46px 20px 50px;
+      }
+
+      .hero-subtitle {
+        font-size: 0.98rem;
+      }
+
+      main {
+        width: calc(100% - 24px);
+      }
+
+      .info-panel {
+        padding: 20px;
+      }
+
+      .exercise-image,
+      .exercise-image img,
+      .image-placeholder {
+        min-height: 215px;
+      }
+
+      .exercise-content {
+        padding: 20px 18px 22px;
+      }
+
+      .closing-note {
+        padding: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="institution-logo">
+        <!-- Reemplaza logo-institucion.png por el archivo del logo institucional -->
+        <img
+          src="tecba.jfi"
+          alt="Logo del Tecnológico Boliviano Alemán"
+          onerror="this.remove(); this.parentElement.textContent='TBA';"
+        >
+      </div>
+      <p class="institution-name">Tecnológico Boliviano Alemán</p>
+      <span class="header-label">Guía educativa</span>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="page-title">
+    <div class="hero-inner">
+      <p class="eyebrow">Guía visual</p>
+      <h1 id="page-title">Cuidado y conciencia del suelo pélvico</h1>
+      <h2>Durante el embarazo</h2>
+      <p class="hero-subtitle">
+        Ejercicios suaves, respiración y recomendaciones de seguridad
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <section class="intro-grid" aria-label="Presentación del suelo pélvico">
+      <article class="info-panel objective">
+        <p class="section-kicker">Objetivo</p>
+        <h2>Una guía para cuidarte</h2>
+        <p>
+          Ofrecer información educativa, sencilla y visual para reconocer el suelo
+          pélvico, comprender la respiración y conocer movimientos suaves que
+          pueden ser considerados durante el embarazo, siempre con orientación
+          profesional.
+        </p>
+      </article>
+
+      <article class="info-panel">
+        <p class="section-kicker">Conoce tu cuerpo</p>
+        <h2>¿Qué es el suelo pélvico?</h2>
+        <p>
+          Es un conjunto de músculos, fascias y tejido conectivo situado en la
+          parte inferior de la pelvis. Ayuda a sostener órganos pélvicos como la
+          vejiga, el útero y el recto; participa en la continencia y trabaja
+          coordinadamente con la respiración y la postura.
+        </p>
+        <p>
+          Durante el embarazo cambian la postura y las cargas sobre la región.
+          Por eso es importante aprender tanto la contracción como la relajación,
+          sin forzar ni asumir que todas las personas necesitan los mismos
+          ejercicios.
+        </p>
+      </article>
+
+      <article class="info-panel">
+        <p class="section-kicker">En conjunto</p>
+        <h2>Funciones principales</h2>
+        <ul class="functions">
+          <li>Apoyo de los órganos pélvicos.</li>
+          <li>Participación en el control urinario y fecal.</li>
+          <li>Coordinación con la respiración, la postura y las actividades cotidianas.</li>
+          <li>Capacidad de contraerse y volver a relajarse.</li>
+        </ul>
+      </article>
+
+      <article class="info-panel">
+        <p class="section-kicker">Antes de empezar</p>
+        <h2>Respeta tus sensaciones</h2>
+        <p>
+          Realiza los movimientos con suavidad y solo si te resultan cómodos.
+          Cada embarazo y cada cuerpo son diferentes.
+        </p>
+        <p class="notice">
+          <strong>Busca orientación profesional</strong> si tienes dolor, dudas,
+          síntomas nuevos o necesitas adaptar una postura.
+        </p>
+      </article>
+    </section>
+
+    <section aria-labelledby="exercises-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Movimiento consciente</p>
+          <h2 id="exercises-title">Ejercicios suaves</h2>
+        </div>
+        <p>
+          Haz cada movimiento lentamente, respirando con naturalidad y sin forzar
+          el cuerpo.
+        </p>
+      </div>
+
+      <div class="exercise-list">
+        <!-- Ejercicio 1 -->
+        <article class="exercise-card">
+          <div class="exercise-image">
+            <img
+              src="EJERCICIO1.PNG"
+              alt="Persona practicando respiración diafragmática"
+              onerror="this.outerHTML='<div class=&quot;image-placeholder&quot; role=&quot;img&quot; aria-label=&quot;Espacio para Imagen 1&quot;><div class=&quot;placeholder-inner&quot;><span class=&quot;placeholder-number&quot;>1</span><span class=&quot;placeholder-label&quot;>Imagen 1</span></div></div>'"
+            >
+          </div>
+          <div class="exercise-content">
+            <p class="exercise-number">Ejercicio 1</p>
+            <h3>Respiración diafragmática</h3>
+            <p class="purpose">
+              <strong>Propósito:</strong> Reconocer el movimiento del abdomen y
+              facilitar una respiración tranquila.
+            </p>
+            <h4>Cómo realizarlo</h4>
+            <ol>
+              <li>
+                Acuéstate de lado o semisentada, con apoyo cómodo; también puedes
+                sentarte si te resulta mejor.
+              </li>
+              <li>Coloca una mano sobre el abdomen y otra sobre el pecho.</li>
+              <li>
+                Inhala suavemente por la nariz, permitiendo que el abdomen se
+                expanda sin elevar los hombros.
+              </li>
+              <li>Exhala lentamente por la boca y deja que el abdomen descienda.</li>
+              <li>Continúa unos ciclos tranquilos, sin forzar la profundidad.</li>
+            </ol>
+            <p class="safety">
+              <strong>Importante:</strong> Si estar boca arriba te causa mareo o
+              incomodidad, cambia de posición. No fuerces pausas respiratorias.
+            </p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 2 -->
+        <article class="exercise-card">
+          <div class="exercise-image">
+            <img
+              src="EJERCICIO2.PNG"
+              alt="Ilustración educativa de contracción y relajación del suelo pélvico"
+              onerror="this.outerHTML='<div class=&quot;image-placeholder&quot; role=&quot;img&quot; aria-label=&quot;Espacio para Imagen 2&quot;><div class=&quot;placeholder-inner&quot;><span class=&quot;placeholder-number&quot;>2</span><span class=&quot;placeholder-label&quot;>Imagen 2</span></div></div>'"
+            >
+          </div>
+          <div class="exercise-content">
+            <p class="exercise-number">Ejercicio 2</p>
+            <h3>Conciencia: contraer y relajar el suelo pélvico</h3>
+            <p class="purpose">
+              <strong>Propósito:</strong> Reconocer que el suelo pélvico puede
+              activarse y también debe relajarse.
+            </p>
+            <h4>Cómo realizarlo</h4>
+            <ol>
+              <li>Siéntate con los pies apoyados y la espalda cómoda.</li>
+              <li>
+                Imagina que intentas evitar suavemente la salida de gases y el
+                paso de orina, sin apretar glúteos ni muslos.
+              </li>
+              <li>
+                Haz una contracción suave solo si un profesional confirmó que es
+                apropiada para ti.
+              </li>
+              <li>Suelta por completo y permite que la zona vuelva a descansar.</li>
+              <li>
+                Observa la diferencia entre activar y relajar; no practiques
+                interrumpiendo el chorro de orina.
+              </li>
+            </ol>
+            <p class="safety">
+              <strong>Importante:</strong> La técnica y la dosis dependen de cada
+              persona. Si no puedes relajar, tienes dolor o dudas, solicita
+              valoración fisioterapéutica.
+            </p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 3 -->
+        <article class="exercise-card">
+          <div class="exercise-image">
+            <img
+              src="EJERCICIO3.png"
+              alt="Persona realizando una basculación pélvica suave de lado"
+              onerror="this.outerHTML='<div class=&quot;image-placeholder&quot; role=&quot;img&quot; aria-label=&quot;Espacio para Imagen 3&quot;><div class=&quot;placeholder-inner&quot;><span class=&quot;placeholder-number&quot;>3</span><span class=&quot;placeholder-label&quot;>Imagen 3</span></div></div>'"
+            >
+          </div>
+          <div class="exercise-content">
+            <p class="exercise-number">Ejercicio 3</p>
+            <h3>Basculación pélvica suave</h3>
+            <p class="purpose">
+              <strong>Propósito:</strong> Tomar conciencia de la posición de la
+              pelvis y movilizar suavemente la zona lumbar.
+            </p>
+            <h4>Cómo realizarlo</h4>
+            <ol>
+              <li>Colócate de lado con las rodillas ligeramente flexionadas.</li>
+              <li>Realiza un pequeño movimiento de la pelvis hacia delante y hacia atrás.</li>
+              <li>Mantén el movimiento lento, cómodo y sin contener la respiración.</li>
+              <li>Vuelve al centro y descansa.</li>
+            </ol>
+            <p class="safety">
+              <strong>Importante:</strong> Evita movimientos amplios o dolorosos.
+            </p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 4 -->
+        <article class="exercise-card">
+          <div class="exercise-image">
+            <img
+              src="EJERCICIO4.png"
+              alt="Persona en cuatro apoyos realizando gato-vaca adaptado"
+              onerror="this.outerHTML='<div class=&quot;image-placeholder&quot; role=&quot;img&quot; aria-label=&quot;Espacio para Imagen 4&quot;><div class=&quot;placeholder-inner&quot;><span class=&quot;placeholder-number&quot;>4</span><span class=&quot;placeholder-label&quot;>Imagen 4</span></div></div>'"
+            >
+          </div>
+          <div class="exercise-content">
+            <p class="exercise-number">Ejercicio 4</p>
+            <h3>Gato-vaca adaptado</h3>
+            <p class="purpose">
+              <strong>Propósito:</strong> Favorecer la movilidad cómoda de la
+              columna y la pelvis.
+            </p>
+            <h4>Cómo realizarlo</h4>
+            <ol>
+              <li>
+                Colócate en cuatro apoyos sobre una superficie acolchada, solo si
+                esa posición es cómoda.
+              </li>
+              <li>Al inhalar, deja que la espalda vuelva suavemente a una posición neutra.</li>
+              <li>Al exhalar, redondea un poco la espalda sin forzar el cuello.</li>
+              <li>Regresa al centro y continúa lentamente.</li>
+            </ol>
+            <p class="safety">
+              <strong>Importante:</strong> No hundas la zona lumbar ni fuerces el
+              rango. Si la posición genera presión o molestias, omítelo.
+            </p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 5 -->
+        <article class="exercise-card">
+          <div class="exercise-image">
+            <img
+              src="EJERCICIO5.png"
+              alt="Persona sentada en posición de mariposa adaptada"
+              onerror="this.outerHTML='<div class=&quot;image-placeholder&quot; role=&quot;img&quot; aria-label=&quot;Espacio para Imagen 5&quot;><div class=&quot;placeholder-inner&quot;><span class=&quot;placeholder-number&quot;>5</span><span class=&quot;placeholder-label&quot;>Imagen 5</span></div></div>'"
+            >
+          </div>
+          <div class="exercise-content">
+            <p class="exercise-number">Ejercicio 5</p>
+            <h3>Mariposa sentada adaptada</h3>
+            <p class="purpose">
+              <strong>Propósito:</strong> Adoptar una posición cómoda y practicar
+              la respiración relajada.
+            </p>
+            <h4>Cómo realizarlo</h4>
+            <ol>
+              <li>Siéntate sobre un cojín firme, con la espalda apoyada si lo necesitas.</li>
+              <li>
+                Junta las plantas de los pies solo hasta donde sea cómodo; deja
+                que las rodillas permanezcan relajadas.
+              </li>
+              <li>Respira con calma y evita empujar las rodillas hacia el suelo.</li>
+              <li>Sal de la posición lentamente.</li>
+            </ol>
+            <p class="safety">
+              <strong>Importante:</strong> No es necesario lograr un estiramiento.
+              Evítalo si produce dolor en pubis, caderas o pelvis.
+            </p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 6 -->
+        <article class="exercise-card">
+          <div class="exercise-image">
+            <img
+              src="EJERCICO6.png"
+              alt="Persona descansando de lado con almohadas de apoyo"
+              onerror="this.outerHTML='<div class=&quot;image-placeholder&quot; role=&quot;img&quot; aria-label=&quot;Espacio para Imagen 6&quot;><div class=&quot;placeholder-inner&quot;><span class=&quot;placeholder-number&quot;>6</span><span class=&quot;placeholder-label&quot;>Imagen 6</span></div></div>'"
+            >
+          </div>
+          <div class="exercise-content">
+            <p class="exercise-number">Ejercicio 6</p>
+            <h3>Descanso de lado con apoyo</h3>
+            <p class="purpose">
+              <strong>Propósito:</strong> Encontrar una posición de descanso que
+              permita respirar cómodamente.
+            </p>
+            <h4>Cómo realizarlo</h4>
+            <ol>
+              <li>
+                Acuéstate de lado, preferentemente sobre el lado que te resulte
+                más cómodo.
+              </li>
+              <li>
+                Coloca una almohada entre las rodillas y otra bajo el abdomen si
+                lo necesitas.
+              </li>
+              <li>Relaja mandíbula, hombros y abdomen; respira con naturalidad.</li>
+              <li>
+                Cambia de lado o ajusta los apoyos si aparece presión o
+                incomodidad.
+              </li>
+            </ol>
+            <p class="safety">
+              <strong>Importante:</strong> La posición debe ser cómoda; no
+              permanezcas en una postura que cause mareo, dolor o falta de aire.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="closing-note">
+      <h2>Una guía para acompañarte</h2>
+      <p>
+        Estos contenidos son educativos y no reemplazan la valoración individual.
+        Consulta con un profesional de salud para saber qué movimientos son
+        adecuados para ti.
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Tecnológico Boliviano Alemán · Guía visual durante el embarazo</p>
+  </footer>
+</body>
+</html>
