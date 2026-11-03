@@ -99,7 +99,11 @@
       overflow: hidden;
       padding: clamp(52px, 8vw, 96px) 20px;
       color: white;
-      background: linear-gradient(120deg, rgba(18, 61, 72, 0.97), rgba(35, 95, 98, 0.88));
+      background: linear-gradient(
+        120deg,
+        rgba(18, 61, 72, 0.97),
+        rgba(35, 95, 98, 0.88)
+      );
     }
 
     .hero::after {
@@ -178,12 +182,6 @@
       box-shadow: var(--shadow);
     }
 
-    .info-panel.objective {
-      color: white;
-      border: 0;
-      background: var(--sage);
-    }
-
     .section-kicker {
       margin: 0 0 7px;
       color: var(--sage);
@@ -193,10 +191,6 @@
       text-transform: uppercase;
     }
 
-    .objective .section-kicker {
-      color: #f4e6c6;
-    }
-
     .info-panel h2,
     .section-heading h2 {
       margin: 0 0 12px;
@@ -204,10 +198,6 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 1.8rem;
       line-height: 1.2;
-    }
-
-    .objective h2 {
-      color: white;
     }
 
     .info-panel p {
@@ -283,22 +273,23 @@
       box-shadow: var(--shadow);
     }
 
+    /* La imagen conserva su proporción y se muestra completa. */
     .exercise-image {
-      position: relative;
       min-height: 320px;
       display: grid;
       place-items: center;
+      padding: 16px;
       overflow: hidden;
       background: #e7efe8;
     }
 
     .exercise-image img {
-      position: absolute;
-      inset: 0;
+      position: static;
       width: 100%;
-      height: 100%;
-      min-height: 320px;
-      object-fit: cover;
+      height: auto;
+      min-height: 0;
+      max-height: none;
+      object-fit: contain;
     }
 
     .image-placeholder {
@@ -476,9 +467,14 @@
       }
 
       .exercise-image,
-      .exercise-image img,
       .image-placeholder {
-        min-height: 250px;
+        min-height: 220px;
+      }
+
+      .exercise-image img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
       }
 
       .exercise-content {
@@ -509,9 +505,12 @@
       }
 
       .exercise-image,
-      .exercise-image img,
       .image-placeholder {
-        min-height: 215px;
+        min-height: 180px;
+      }
+
+      .exercise-image img {
+        min-height: 0;
       }
 
       .exercise-content {
@@ -535,7 +534,6 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="institution-logo">
-        <!-- Reemplaza logo-institucion.png por el archivo del logo institucional -->
         <img
           src="tecba.png"
           alt="Logo del Tecnológico Boliviano Alemán"
@@ -560,17 +558,6 @@
 
   <main>
     <section class="intro-grid" aria-label="Presentación del suelo pélvico">
-      <article class="info-panel objective">
-        <p class="section-kicker">Objetivo</p>
-        <h2>Una guía para cuidarte</h2>
-        <p>
-          Ofrecer información educativa, sencilla y visual para reconocer el suelo
-          pélvico, comprender la respiración y conocer movimientos suaves que
-          pueden ser considerados durante el embarazo, siempre con orientación
-          profesional.
-        </p>
-      </article>
-
       <article class="info-panel">
         <p class="section-kicker">Conoce tu cuerpo</p>
         <h2>¿Qué es el suelo pélvico?</h2>
@@ -626,7 +613,6 @@
       </div>
 
       <div class="exercise-list">
-        <!-- Ejercicio 1 -->
         <article class="exercise-card">
           <div class="exercise-image">
             <img
@@ -663,7 +649,6 @@
           </div>
         </article>
 
-        <!-- Ejercicio 2 -->
         <article class="exercise-card">
           <div class="exercise-image">
             <img
@@ -704,7 +689,6 @@
           </div>
         </article>
 
-        <!-- Ejercicio 3 -->
         <article class="exercise-card">
           <div class="exercise-image">
             <img
@@ -733,7 +717,6 @@
           </div>
         </article>
 
-        <!-- Ejercicio 4 -->
         <article class="exercise-card">
           <div class="exercise-image">
             <img
@@ -766,7 +749,6 @@
           </div>
         </article>
 
-        <!-- Ejercicio 5 -->
         <article class="exercise-card">
           <div class="exercise-image">
             <img
@@ -799,7 +781,6 @@
           </div>
         </article>
 
-        <!-- Ejercicio 6 -->
         <article class="exercise-card">
           <div class="exercise-image">
             <img
